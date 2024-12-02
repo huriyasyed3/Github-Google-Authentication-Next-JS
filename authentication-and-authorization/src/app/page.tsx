@@ -19,24 +19,21 @@ export default async function Home() {
               Welcome to our APP!
             </h1>
             <p className="text-lg mb-9 pt-8 text-white">
-            "Join thousands of users who trust our platform for secure and seamless authentication. Whether you're managing your profile or exploring our exclusive features, we've got you covered!"
+              &quot;Join thousands of users who trust our platform for secure and seamless authentication. Whether you&apos;re managing your profile or exploring our exclusive features, we&apos;ve got you covered!&quot;
             </p>
-           
-                  <SessionWrapper>
-                    {isAuthenticated ? (
-                      <SignOutPage />
-                    ) : (
-                      <SignInPage />
-                    )}
-                  </SessionWrapper>
 
-                 <Button className="bg-pink-600 text-md p-4 ">Learn More!</Button>
-                </div>
-             
-          
+            <SessionWrapper>
+              {isAuthenticated ? (
+                <SignOutPage />
+              ) : (
+                <SignInPage />
+              )}
+            </SessionWrapper>
+
+            <Button className="bg-pink-600 text-md p-4 ">Learn More!</Button>
+          </div>
         </main>
-   </div>
+      </div>
     </>
   );
 }
-
